@@ -1,0 +1,199 @@
+// 模块
+@charset"utf-8";
+/* rest.css 重置样式*/
+
+/* 选中所有的元素和伪元素 */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    /* 针对移动端 */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* 点击高亮效果清除 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-size: 14px;
+    background-color: rgb(242, 242,242);
+    font-family: 'Microsoft Yahei', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    resize: none;
+    /* 清除移动端输入框特有样式 */
+    -webkit-appearance: none;
+}
+
+/* common.css 公用样式 */
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+// model  css
+
+// 主体容器
+.sn-layout {
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+// 头部搜索
+.sn-search {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: rgba(250, 185, 0, 0);
+    .sn-search-box {
+        width: 750/100rem;
+        height: 90/100rem;
+        position: relative;
+        a {
+            width: 90/100rem;
+            height: 90/100rem;
+            position: absolute;
+            top: 0;
+            &.icon-category {
+                left: 0;
+                img {
+                    display: block;
+                    width: 44/100rem;
+                    height: 70/100rem;
+                    margin: 10/100rem auto;
+                }
+            }
+            &.icon-cart {
+                right: 0;
+                line-height: 90/100rem;
+                text-align: center;
+                font-size: 24/100rem;
+                color: white;
+                font-weight: 500;
+            }
+        }
+        form {
+            width: 100%;
+            padding: 0 90/100rem;
+            a {
+                img {
+                    display: block;
+                    width: 30/100rem;
+                    height: 30/100rem;
+                    position: absolute;
+                    left: 10/100rem;
+                    top: 30/100rem;
+                }
+            }
+            input {
+                width: 100%;
+                height: 60/100rem;
+                margin-top: 15/100rem;
+                border: none; // background: rgba(225, 225, 225, 0);
+                border-radius: 6/100rem;
+                font-size: 20/100rem;
+                outline: none;
+                padding-left: 50/100rem;
+            }
+        }
+    }
+}
+
+// 轮播图
+.swiper-container {
+    height: 368/100rem;
+    .swiper-wrapper div img {
+        width: 750/100rem;
+        height: 368/100rem;
+    }
+}
+
+// 导航
+.sn-nav {
+    background-color: white;
+    ul {
+        li {
+            float: left;
+            width: 150/100rem;
+            height: 150/100rem;
+            img {
+                display: block;
+                width: 80/100rem;
+                height: 80/100rem;
+                margin: 35/100rem;
+            }
+            span {
+                display: block;
+                width: 80/100rem;
+                margin: -20/100rem 35/100rem;
+                font-size: 20/100rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 商品部分
+.sn-1 {
+    background-color: white;
+    padding-bottom: 80/100rem;
+    img {
+        width: 750/100rem;
+        height: 368/100rem;
+        margin: 30/100rem 0;
+    }
+}
+
+// 底部页签
+.sn-tabs {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    ul {
+        li {
+            float: left;
+            width: 20%;
+            a img {
+                display: block;
+                width: 80/100rem;
+                height: 80/100rem;
+                margin: 0 35/100rem;
+            }
+            p {
+                display: block;
+                width: 80/100rem;
+                margin: 0 auto;
+                font-size: 20/100rem;
+                text-align: center;
+            }
+        }
+    }
+}
