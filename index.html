@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>苏宁-首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet/less" type="text/css" href="less/main.less">
+    <link rel="stylesheet" href="assets/swiper/swiper.min.css">
+    <script src="assets/less/less.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 主体容器 -->
+    <div class="sn-layout">
+        <!-- 头部搜索 -->
+        <header class="sn-search clearfix" id="sn-search">
+            <div class="sn-search-box">
+                <a href="" class="icon-category"><img src="./images/1.png" alt=""></a>
+                <form action="">
+                    <a href=""> <img src="./images/2.png" alt=""></a>
+                    <input type="search" placeholder="点击搜索">
+                </form>
+                <a href="" class="icon-cart">登录</a>
+            </div>
+        </header>
+        <!-- 轮播图 -->
+        <div class="swiper-container" id="sn-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href=""><img src="images/4.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="images/5.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="images/6.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="images/7.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="images/4.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="images/5.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="images/6.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="images/7.jpg" alt=""></a></div>
+            </div>
+            <!-- 分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 导航 -->
+        <nav class="sn-nav">
+            <ul class="nav-img clearfix">
+                <li><a href=""><img src="images/8.png" alt=""><span>爆款手机</span></a></li>
+                <li><a href=""><img src="images/9.png" alt=""><span>苏宁超市</span></a></li>
+                <li><a href=""><img src="images/10.png" alt=""><span>生活家电</span></a></li>
+                <li><a href=""><img src="images/11.png" alt=""><span>苏宁生鲜</span></a></li>
+                <li><a href=""><img src="images/12.png" alt=""><span>母婴玩具</span></a></li>
+                <li><a href=""><img src="images/12.png" alt=""><span>限时抢购</span></a></li>
+                <li><a href=""><img src="images/11.png" alt=""><span>赚钱</span></a></li>
+                <li><a href=""><img src="images/10.png" alt=""><span>苏宁拼购</span></a></li>
+                <li><a href=""><img src="images/9.png" alt=""><span>苏宁家电</span></a></li>
+                <li><a href=""><img src="images/8.png" alt=""><span>签到有礼</span></a></li>
+            </ul>
+        </nav>
+        <!-- 商品部分   -->
+        <div class="sn-1">
+            <img src="./images/4.jpg" alt="">
+            <img src="./images/5.jpg" alt="">
+        </div>
+
+        <!-- 底部页签 -->
+        <footer class="sn-tabs">
+            <ul class="clearfix">
+                <li>
+                    <a href=""><img src="images/15.png" alt=""></a>
+                    <p><a href="">猜你喜欢</a></p>
+                </li>
+                <li>
+                    <a href=""><img src="images/15.png" alt=""></a>
+                    <p><a href="">分类</a></p>
+                </li>
+                <li>
+                    <a href=""><img src="images/15.png" alt=""></a>
+                    <p><a href="">必抢清单</a></p>
+                </li>
+                <li>
+                    <a href=""><img src="images/15.png" alt=""></a>
+                    <p><a href="">购物车</a></p>
+                </li>
+                <li>
+                    <a href=""><img src="images/15.png" alt=""></a>
+                    <p><a href="">我的易购</a></p>
+                </li>
+
+            </ul>
+        </footer>
+    </div>
+
+
+
+    <script src="assets/swiper/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // 自动切换
+            autoplay: true,
+            loop: true,
+            // 分页器
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                // 点击控制
+                paginationClickable: true,
+            }
+        })        
+    </script>
+</body>
+
+</html>
